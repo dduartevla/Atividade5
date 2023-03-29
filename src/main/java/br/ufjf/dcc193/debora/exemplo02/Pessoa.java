@@ -1,5 +1,6 @@
 package br.ufjf.dcc193.debora.exemplo02;
 public class Pessoa {
+    
     private String nome;
     private String idade;
     
