@@ -16,6 +16,11 @@ public class HomeController {
         //if (nome == null){
         //    nome = "Desconhecido";
         //}
-        return "/WEB-INF/views/home.jsp";
+        return "home";
+    }
+
+    @GetMapping("/formulario.html")
+    public String formulario(){
+        return "form";
     }
 }
