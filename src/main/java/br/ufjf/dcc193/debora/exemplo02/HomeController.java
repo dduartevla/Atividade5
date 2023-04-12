@@ -27,11 +27,10 @@ public class HomeController {
     }
 
     @PostMapping("/resultado.html")
-    public ModelAndView resultado(String nome, Integer idade){
+    public ModelAndView resultado(Pessoa p){
         ModelAndView mv = new ModelAndView();
         mv.setViewName("form-resp");
-        mv.addObject("nome", nome);
-        mv.addObject("idade", idade);
+        mv.addObject("pessoa", p);
         return mv;
     }
 }
